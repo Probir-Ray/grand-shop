@@ -2,23 +2,34 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
-.search-field {
-  border: none;
-  border-radius: 50px;
-  padding: 5px;
-  outline: none;
+input#input-field {
+  border: 1px solid #ddd;
+  border-right: 0;
+  padding: 5px 20px;
+  border-radius: 50px 0 0 50px;
+  height: 46px;
+  width: 295px;
 }
 .search-field:hover {
   outline: none;
   border: none;
 }
+button#search-btn {
+  margin-left: -20px;
+  border-radius: 0 5px 5px 0;
+  padding: 12px 22px;
+  margin-top: -3px;
+  background: bisque;
+  color: #222;
+}
 .search-box {
-  border: 1px solid rgb(3, 118, 211);
-  width: 281px;
-  border-radius: 5px;
+  width: auto;
   margin: auto;
-  margin-top: 50px;
-  border-right: none;
+  margin: 30px auto;
+  background-color: #5cb85c;
+  text-align: center;
+  padding: 26px;
+  border-radius: 8px;
 }
 .search-button {
   padding: 10px 50px;
