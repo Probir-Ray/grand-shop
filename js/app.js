@@ -1,3 +1,9 @@
+/******************************************
+  *** Fetch all product from online api ***
+  *** url: https://fakestoreapi.com/products
+*******************************************/
+
+// Fetch all product from fakestoreapi
 const loadProducts = () => {
   const url = `https://fakestoreapi.com/products`;
   fetch(url)
@@ -6,7 +12,8 @@ const loadProducts = () => {
 };
 loadProducts();
 
-// show all product in UI 
+
+// Showing all product in browser
 const showProducts = (products) => {
   const allProducts = products.map((pd) => pd);
   for (const product of allProducts) {
@@ -30,6 +37,8 @@ const showProducts = (products) => {
     document.getElementById("all-products").appendChild(div);
   }
 };
+
+
 let count = 0;
 const addToCart = (id, price) => {
   count = count + 1;
@@ -40,11 +49,14 @@ const addToCart = (id, price) => {
   updateTotal();
 };
 
+
+// Get input value function
 const getInputValue = (id) => {
   const element = document.getElementById(id).innerText;
   const converted = parseFloat(element);
   return converted;
 };
+
 
 // main price update function
 const updatePrice = (id, value) => {
@@ -54,10 +66,12 @@ const updatePrice = (id, value) => {
   document.getElementById(id).innerText = total.toFixed(2);
 };
 
+
 // set innerText function
 const setInnerText = (id, value) => {
   document.getElementById(id).innerText = Math.round(value);
 };
+
 
 // update delivery charge and total Tax
 const updateTaxAndCharge = () => {
@@ -75,6 +89,7 @@ const updateTaxAndCharge = () => {
     setInnerText("total-tax", priceConverted * 0.4);
   }
 };
+
 
 //grandTotal update function
 const updateTotal = () => {

@@ -25,9 +25,11 @@ button#search-btn {
   background: bisque;
   color: #222;
 }
+button#search-btn:hover {
+  background-color: azure;
+}
 .search-box {
-  width: auto;
-  margin: auto;
+  width: 97%;
   margin: 30px auto;
   background-color: #5cb85c;
   text-align: center;
@@ -43,7 +45,7 @@ button#search-btn {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
-  width: 100%;
+  width: 97%;
   margin: auto;
   justify-items: stretch;
 }
