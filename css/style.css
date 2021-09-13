@@ -42,21 +42,19 @@ button#search-btn {
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* border: 1px solid black; */
   text-align: center;
   width: 100%;
   margin: auto;
-  align-items: center;
-  justify-content: center;
+  justify-items: stretch;
 }
 
 .product {
   padding: 16px;
   transition: 0.3s;
-  box-shadow: 1px 2px 12px grey;
   margin: 12px 10px;
-  border-radius: 2px;
+  border-radius: 5px;
   min-height: 90%;
+  border: 1px solid #80808073;
 }
 
 .product:hover {
